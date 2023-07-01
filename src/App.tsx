@@ -3,10 +3,10 @@ import './App.css';
 
 function App() {
 
-    let [a, setA] = useState(1) // 1. Объявляем хук с переменной и его изменяемым состоянием, задаём начальное значение
+    let [a, setA] = useState(1)
 
     const counterPlus = () => {
-        setA(++a) // 2. Сетаем состояние и указываем новое значение переменной
+        setA(++a)
     }
 
     const counterZero = () => {
@@ -16,7 +16,7 @@ function App() {
     return (
         <div className="App">
             <h1>{a}</h1>
-            <button onClick={counterPlus}>+ 1</button> {/* 3. Передаём функцию с сетом в событие */}
+            <button onClick={counterPlus}>+ 1</button>
             <button onClick={counterZero}>zero</button>
         </div>
     );
